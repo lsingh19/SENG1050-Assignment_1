@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding = "utf-8"?>
+<!DOCTYPE ofm[
+	<!ELEMENT ofm (goodsType)> 
+	<!ELEMENT goodsType (goods*) >
+		<!ATTLIST goodsType sort CDATA #REQUIRED>	
+	<!ELEMENT goods (goodsName, goodsPicture, farm, delivery)> 
+	<!ELEMENT goodsName (#PCDATA)>
+	<!ELEMENT goodsPicture (#PCDATA)> 
+	<!ELEMENT farm (farmName, farmPicture, farmDescription, farmURL, farmAddress, farmLogo?, farmPhoneNumber*, farmOwner*, farmEstablished, numberOfEmployees)> 
+		<!ELEMENT farmName (#PCDATA)>
+		<!ELEMENT farmPicture (#PCDATA)>
+		<!ELEMENT farmDescription (#PCDATA)> 
+		<!ELEMENT farmURL (#PCDATA)> 
+		<!ELEMENT farmAddress (#PCDATA)> 
+		<!ELEMENT farmLogo (#PCDATA)> 
+		<!ELEMENT farmPhoneNumber (#PCDATA)> 
+		<!ELEMENT farmOwner (#PCDATA)> 
+		<!ELEMENT farmEstablished (#PCDATA)> 
+		<!ELEMENT numberOfEmployees (#PCDATA)> 
+	<!ELEMENT delivery (currency, minimumPrice, deliveryFee)> 
+		<!ELEMENT currency (#PCDATA)>
+		<!ELEMENT minimumPrice (#PCDATA)> 
+		<!ELEMENT deliveryFee (#PCDATA)> 
+	<!ENTITY AUD "Australian Dollar"> 
+	<!ENTITY USD "United States Dollar"> 
+]>
+
+<ofm> 
+	<goodsType sort="Vegetables"> 
+		<goods> 
+		<!-- Farm 1 --> 
+			<goodsName>Celery</goodsName>
+			<!-- image sourced: "https://i5.walmartimages.ca/images/Large/272/227/6000191272227.jpg" -->
+			<goodsPicture> images/celery.jpg</goodsPicture> 
+			<farm> 
+				<farmName> Rolling Hills Estate</farmName>
+				<farmPicture>images/644c13651919dcefe06e6827bce7a29e.jpg</farmPicture> 
+				<farmDescription>
+					The Rolling Hills Estate is a family owned estate established in 1981 and is located 2.5 hour north of Sydney. 
+					Rolling Hills Estate is one of Australia's biggest celery farms and only exports within Australia. Under the management of CEO
+					Kevin Hills, the farm operates 24 hours a day, 7 days a week with 500 employees working on and off-site.
+					</farmDescription> 
+				<farmURL>www.rollinghillsestate.org</farmURL>
+				<farmAddress> 123 Rollin Road, Rolling Hills</farmAddress> 
+				<!-- image sourced: "https://i.pinimg.com/originals/d0/54/89/d054890aa6a20fe5273d24feff7acc79.jpg" -->
+				<farmLogo>images/d054890aa6a20fe5273d24feff7acc79.jpg</farmLogo> 
+				<farmPhoneNumber> 045 765 342</farmPhoneNumber>
+				<farmOwner>Kevin Hills</farmOwner>
+				<farmEstablished>1981</farmEstablished> 
+				<numberOfEmployees>500</numberOfEmployees> 
+			</farm> 
+			<delivery> 
+				<currency> &AUD; </currency> 
+				<minimumPrice> 20 </minimumPrice>
+				<deliveryFee> 3</deliveryFee>
+			</delivery>
+		</goods>
+		
+		<!-- Farm 2 --> 
+		<goods> 
+			<goodsName>Cabbage</goodsName>
+			<!-- image sourced: "https://i5.walmartimages.ca/images/Large/272/109/6000191272109.jpg" --> 
+			<goodsPicture>images/6000191272109.jpg</goodsPicture> 
+			<farm> 
+				<farmName>Moonshadow Lands</farmName>
+				<farmPicture> images/Cabbage-farm.jpg </farmPicture> 
+				<farmDescription> 
+					Moonshadow Lands is currently the only exporter in Australia that directly exports cabbages to the USA. Established in 2007 by owner 
+					and CEO Ben Smith, who currently employees 10,000 staff members to grow, pack and export the cabbages directly to USA.
+					The farm is the one farm across the globe that exports fresh cabbages to the USA within 2 days and also holds the title of the The worlds
+					fastest produce of cabbages. 
+				</farmDescription> 
+				<farmURL>www.moonshadowslands.org.au</farmURL>
+				<farmAddress>179_Moon Drive,Moon</farmAddress> 
+				<!-- image sourced: "https://images.template.net/wp-content/uploads/2017/04/Abstract-Logo-with-Colorful-Leaves1.jpg" -->
+				<farmLogo> images/images.jpg</farmLogo> 
+				<farmPhoneNumber>0456785368</farmPhoneNumber>
+				<farmOwner>Ben Smith</farmOwner>
+				<farmEstablished>2007</farmEstablished> 
+				<numberOfEmployees>10000</numberOfEmployees> 
+			</farm> 
+			<delivery> 
+				<currency> &USD; </currency> 
+				<minimumPrice>20</minimumPrice>
+				<deliveryFee>15</deliveryFee>
+			</delivery>
+		</goods>
+		
+		<!-- Farm 3 --> 
+		<goods> 
+			<goodsName>Pumpkin</goodsName>
+			<!-- image sourced: "https://www.manabazzar.com/wp-content/uploads/2017/12/Pumpkin.jpg" --> 
+			<goodsPicture> images/Pumpkin.jpg</goodsPicture> 
+			<farm> 
+				<farmName> Black Hawk Estate</farmName>
+				<farmPicture>images/491681700-612x612.jpg</farmPicture> 
+				<farmDescription> 
+					Black Hawk Estate was founded and is currently owned by CEO Kyle Marsh, who established the farm in 1900. Kyle Marsh prides himself on
+					owning the one of the oldest Pumpkin procducing farms in Australia and employs a total of 60,000 staff. Although the company is one of Australia largest pumpkin producer, it only export 
+					locally. CEO Kyle Marsh has stated several time to media that his farm only intends to export within Australia as it wants to produce jobs
+					across Australia for Australians job seekers.
+				</farmDescription> 
+				<farmURL>www.blackhawkestate.com.au</farmURL>
+				<farmAddress> 789 hawk street, Hawk</farmAddress> 
+				<!-- image sourced: "http://www.wearetough.org/uploads/1/2/7/3/12732358/149486908.jpg" -->
+				<farmLogo>images/safd.jpg</farmLogo> 
+				<farmPhoneNumber> 0498 346 267</farmPhoneNumber>
+				<farmOwner> Kyle Marsh</farmOwner>
+				<farmEstablished> 1900</farmEstablished> 
+				<numberOfEmployees> 60000</numberOfEmployees> 
+			</farm> 
+			<delivery> 
+				<currency> &AUD; </currency> 
+				<minimumPrice> 8 </minimumPrice>
+				<deliveryFee> 20 </deliveryFee>
+			</delivery>
+		</goods>	
+	</goodsType>
+</ofm> 

@@ -1,0 +1,98 @@
+/* 
+File Name: Style.css
+*/
+
+body {
+	 background-image: url("images/backs.jpg");   
+	 /* displays a background image for the webpage 
+	 sourced from https://wallpapertag.com/wallpaper/full/e/d/5/653864-cool-white-backgrounds-1920x1200-pc.jpg */
+	
+	 /* Ensure that the image is not repeat across the web page  */
+	background-repeat:  no-repeat; 
+	
+
+	/* Centers the background to the middle of the web page  */
+	background-position: center;   
+	
+	
+	background-size: cover;       /*  Ensure that the entire the web page is covers the page with the background image */
+	margin-left: 1cm;			/* the web page will have a margin to the left of 1cm */
+	font-family: Georgia, arial, serif; 		/* setting a list of fonts available for the browser to choose from left to right */
+	color: black;                      /* the color of the body will be black unless overwritten by a embedded or inline tag */
+} 
+ h1 {
+	/* transforming the text into uppercase and coloring the text to yellow */
+	text-transform: uppercase;
+	/* Setting the color of the main heading to red */ 
+	color: red;
+ }
+ 
+ h2 {
+	 /* transforming the text into uppercase*/
+	 text-transform: uppercase;
+ }
+ 
+ /* turns the color of any piece of text within a span to blue */ 
+ span { 
+	color: blue;
+ }
+ 
+ /* XML file 1 = Fruit.xml
+ the link will be appear will to text decoration (no underline) 
+ the link will be appear as blue before it is visited or hovered over 
+ if hovering over link the link will be 130 times bigger than usual and will be coloured cyan
+ if the link is clicked on then it will appear to be green until it is unclicked on 
+ */
+ a.exlinks_1:link {text-decoration: none; } 
+ a.exlinks_1:visited {color: blue; }
+ a.exlinks_1:hover {font-size:130%; color: cyan;}
+ a.exlinks_1:active {color: green; }
+ 
+ /* XML file 2 = Vegetables.xml  
+ the link will be appear will to text decoration (no underline) 
+ the link will be appear as red before it is visited or hovered over 
+ if hovering over link the link will be 130 times bigger than usual and will be coloured yellow
+ if the link is clicked on then it will appear to be white until it is unclicked on 
+ */
+ a.exlinks_2:link {text-decoration: none; } 
+ a.exlinks_2:visited {color: red; }
+ a.exlinks_2:hover {font-size:130%; color: yellow;}
+ a.exlinks_2:active {color: white; }
+ 
+/* the paragraph tag with id introduction will appear with a text size x130 greater than the surrounding 
+paragraphs
+the text colour of the paragraph will be navy
+*/ 
+ #introduction {
+	 font-size: 130%;
+	 color: navy;
+ }
+
+/* 
+the address tag with the id copyright will be aligned to the right of the page 
+*/ 
+ #copyright {
+	 text-align: right;
+ }
+ 
+/* all images within html file will: 
+float to the right of the page 
+the edges of the pictures/images will be rounded 8px
+the images/pictures will have a padding around them of 5px 
+the border around the images/pictures will a border around it which be black */
+ img{
+	 float: left;
+	 border-radius: 8px;
+	 padding: 5px;
+	 border: 1px solid #000;
+ }
+ 
+/* the div at the page with the id ffs will be appear as a teal coloured text 
+a list of fonts are suppilied to the browser 
+from left to right. if the far left font fails then the next font will be used, until a valid font can be 
+used */
+ div.ffs{ 
+	color: teal;
+	font-family: 'Courier New', Lucida, Console; 
+ }
+ 

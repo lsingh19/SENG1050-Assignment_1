@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding = "utf-8"?>
+<!DOCTYPE ofm [
+	<!ELEMENT ofm (goodsType)> 
+	<!ELEMENT goodsType (goods*) >
+		<!ATTLIST goodsType sort CDATA #REQUIRED>
+		
+	<!ELEMENT goods (goodsName, goodsPicture, farm, delivery)> 
+	<!ELEMENT goodsName (#PCDATA)>
+	<!ELEMENT goodsPicture (#PCDATA)> 
+	
+	<!ELEMENT farm (farmName, farmPicture, farmDescription, farmURL, farmAddress, farmLogo?, farmPhoneNumber*, farmOwner*, farmEstablished, numberOfEmployees)> 
+		<!ELEMENT farmName (#PCDATA)>
+		<!ELEMENT farmPicture (#PCDATA)>
+		<!ELEMENT farmDescription (#PCDATA)> 
+		<!ELEMENT farmURL (#PCDATA)> 
+		<!ELEMENT farmAddress (#PCDATA)> 
+		<!ELEMENT farmLogo (#PCDATA)> 
+		<!ELEMENT farmPhoneNumber (#PCDATA)> 
+		<!ELEMENT farmOwner (#PCDATA)> 
+		<!ELEMENT farmEstablished (#PCDATA)> 
+		<!ELEMENT numberOfEmployees (#PCDATA)> 
+		
+	<!ELEMENT delivery (currency, minimumPrice, deliveryFee)> 
+		<!ELEMENT currency (#PCDATA)>
+		<!ELEMENT minimumPrice (#PCDATA)> 
+		<!ELEMENT deliveryFee (#PCDATA)> 
+				
+	<!ENTITY AUD "Australian Dollar"> 
+	<!ENTITY USD "United States Dollar"> 
+]>
+
+
+<ofm> 
+	<goodsType sort="Fruit"> 
+		<!-- Farm 1--> 
+		<goods> 
+			<goodsName>Watermelon</goodsName>
+			<!-- image sourced: https://4awcmd1th3m1scfs83pxlvbh-wpengine.netdna-ssl.com/wp-content/uploads/2017/10/seedless-watermelon.jpg --> 
+			<goodsPicture> images/watermelon.jpg</goodsPicture> 
+			<farm>
+				<farmName>Oak Farm</farmName> 
+				<!-- image sourced from: http://www.ncfieldfamily.org/wp-content/uploads/1760816MCSFRE1943.jpg -->
+				<farmPicture>images/1760816MCSFRE1943.jpg</farmPicture> 
+				<farmDescription> 
+					Oak Farm is one of the newest farm in the watermelon industry, owned by Vic Rich. The farm was established 18 years ago and currently has a total of 900 employees that work onsite
+					to grow and export the watermelons across australia. The farm only exports within Australia at the moment, but intents to export internationally within the next couple of years.
+					OF is currently seen as a major contender in the watermelon export industry and is set to be the leading exporter of watermelons within the next 30 to 40 years.
+					</farmDescription> 
+				<farmURL>www.oakfarm.org.au</farmURL>
+				<farmAddress> 181 Oak Road, Oakvel</farmAddress> 
+				<!-- image sourced:  https://i.kym-cdn.com/photos/images/original/000/234/535/750.gif --> 
+				<farmLogo> images/bat.jpg</farmLogo> 
+				<farmPhoneNumber>0437 567 987</farmPhoneNumber>
+				<farmOwner>Vic Rich</farmOwner>
+				<farmEstablished>2000</farmEstablished> 
+				<numberOfEmployees>900</numberOfEmployees> 
+			</farm> 
+			<delivery> 
+				<currency> &AUD; </currency> 
+				<minimumPrice> 10 </minimumPrice>
+				<deliveryFee> 5 </deliveryFee>
+			</delivery>
+		</goods>
+		
+		<!-- Farm 2--> 
+		<goods> 
+			<goodsName> Mango</goodsName>
+			<!-- image sourced: https://www.specialfruit.com/en/thumbnail/productFull/product-1422538408/mango-by-air.jpg --> 
+			<goodsPicture>images/mango.jpg</goodsPicture> 
+			<farm> 
+				<farmName>Haywire Ranch</farmName> 
+				<!-- image sourced from: http://www.ncfieldfamily.org/wp-content/uploads/1760816MCSFRE1943.jpg -->
+				<farmPicture>images/1760816MCSFRE1943.jpg</farmPicture> 
+				<farmDescription> 
+					Haywire Ranch is the only farm is Australia that export two goods (oranges and mangos). Established in 2005 by CEO Kevin Bacon who
+					currently has 100,000 member working  for him. The farm orginally only exported within Australia, but the demand for oranges and mangos went down in 2008.
+					Ever since then the farm only exports internationally to USA only and has been doing so for the last 10 years. 	
+					</farmDescription> 
+				<farmURL>www.HaywireRanch.com.au</farmURL>
+				<farmAddress>21 Nector Road, Belmont</farmAddress> 
+				<!-- image sourced: https://download.blender.org/institute/BlenderDesktopLogo.png --> 
+				<farmLogo> images/logoooo.jpg </farmLogo> 
+				<farmPhoneNumber> 0430 237 896</farmPhoneNumber>
+				<farmOwner>Kevin Bacon</farmOwner>
+				<farmEstablished>2005</farmEstablished> 
+				<numberOfEmployees>1000</numberOfEmployees> 
+			</farm> 
+			<delivery> 
+				<currency> &USD; </currency> 
+				<minimumPrice> 15 </minimumPrice>
+				<deliveryFee> 5 </deliveryFee>
+			</delivery>
+		</goods>
+		
+		<!-- Farm 3--> 
+		<goods> 
+			<goodsName> Orange </goodsName>
+			<!-- image source: http://www.laceupforchange.org.za/wp-content/uploads/2017/02/fruit-orange.jpg -->
+			<goodsPicture> images/oranges.jpg</goodsPicture> 
+			<farm>
+				<farmName>Haywire Ranch</farmName> 
+				<!-- image sourced from: http://www.ncfieldfamily.org/wp-content/uploads/1760816MCSFRE1943.jpg -->
+				<farmPicture>images/1760816MCSFRE1943.jpg</farmPicture> 
+				<farmDescription> 
+					Haywire Ranch is the only farm is Australia that export two goods (oranges and mangos). Established in 2005 by CEO Kevin Bacon who
+					currently has 100,000 member working  for him. The farm orginally only exported within Australia, but the demand for oranges and mangos went down in 2008.
+					Ever since then the farm only exports internationally to USA only and has been doing so for the last 10 years. 	
+					</farmDescription> 
+				<farmURL>www.HaywireRanch.com.au</farmURL>
+				<farmAddress>21 Nector Road, Belmont</farmAddress> 
+				<!-- image sourced: https://download.blender.org/institute/BlenderDesktopLogo.png --> 
+				<farmLogo> images/logoooo.jpg </farmLogo> 
+				<farmPhoneNumber> 0430 237 896</farmPhoneNumber>
+				<farmOwner>Kevin Bacon</farmOwner>
+				<farmEstablished>2005</farmEstablished> 
+				<numberOfEmployees>1000</numberOfEmployees> 
+			</farm> 
+			<delivery> 
+				<currency> &USD; </currency> 
+				<minimumPrice> 15 </minimumPrice>
+				<deliveryFee> 5 </deliveryFee>
+			</delivery>
+		</goods>
+		
+	</goodsType>
+</ofm> 
